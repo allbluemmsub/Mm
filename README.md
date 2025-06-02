@@ -7,7 +7,7 @@
 <body style="text-align:center; font-family:sans-serif; background-color:#f2f2f2; padding:20px;">
   
   
-  <img src="https://i.postimg.cc/sDxC5RGv/IMG-20250602-211941.jpg" alt="Video Thumbnail" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+  <img src="IMG_20250603_000208_434.jpg" alt="Video Thumbnail" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
 
   
   <h2 style="margin-top:20px;">🎬 မိန်းကလေးသုံးယောက်</h2>

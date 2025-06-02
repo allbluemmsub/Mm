@@ -1,4 +1,4 @@
-# Mm<!DOCTYPE html>
+# Mm<မြန်မာစာတန်းထိုး>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <img src="https://i.postimg.cc/sDxC5RGv/IMG-20250602-211941.jpg" alt="Video Thumbnail" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
 
   
-  <h2 style="margin-top:20px;">🎬 Video Title - Name</h2>
+  <h2 style="margin-top:20px;">🎬 မိန်းကလေးသုံးယောက်</h2>
   <p style="color:#333; font-size:16px;">
     ဒီ video က အထူးသဖြင့် drama တစ်ခုအကြောင်းကိုပြထားပါတယ်။
     အရမ်းစိတ်ဝင်စားဖွယ်ရာပါ။ Megaup link မှာ download လုပ်နိုင်ပါတယ်။အရမ်းကောင်းပါတယ်😂😂😂

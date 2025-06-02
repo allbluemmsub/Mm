@@ -85,15 +85,15 @@
   </style>
 </head>
 <body>
-  <h1>🎬 ဂျပန်ကားများဒေါင်းပါ</h1>
+  <h1>ဆင်ဆာလျှော့ဂျပန်အောကားများ/h1>
 
   <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="🔍 ဇာတ်ကားနာမည်ရှာရန်..." onkeyup="filterMovies()" />
+    <input type="text" id="searchInput" placeholder=" ဇာတ်ကားနာမည်ရှာရန်..." onkeyup="filterMovies()" />
   </div>
 
   <div class="category-bar">
     <select id="categorySelect" onchange="filterMovies()">
-      <option value="all">📁 Category ရွေးပါ</option>
+      <option value="all"> Category ရွေးပါ</option>
       <option value="school">School</option>
       <option value="nurse">Nurse</option>
       <option value="teacher">Teacher</option>
@@ -105,15 +105,15 @@
     <!-- POST 1 -->
     <div class="card" data-title="IPX-310" data-category="school">
       <img src="IMG_20250603_000159_189.jpg" alt="IPX-310" />
-      <h2>IPX-310</h2>
+      <h2>အရမ်းကြည့်ကောင်းတယ်ကျောင်းသားကားလေးပါ/h2>
       <p>School theme movie</p>
       <a href="https://megaup.net/xxxxxx" target="_blank">Download</a>
     </div>
 
     <!-- POST 2 -->
     <div class="card" data-title="IPX-222" data-category="nurse">
-      <img src="IMG_20250603_000208_434.jpg"IPX-222" />
-      <h2>IPX-222</h2>
+      <img src="IMG_20250603_000208_434.jpg" alt="IPX-222" />
+      <h2>သူနာပြုလေးအရမ်းမိုက်</h2>
       <p>Nurse story</p>
       <a href="https://megaup.net/yyyyyy" target="_blank">Download</a>
     </div>
@@ -121,11 +121,17 @@
     <!-- POST 3 -->
     <div class="card" data-title="IPX-999" data-category="teacher">
       <img src="IMG_20250603_000212_622.jpg" alt="IPX-999" />
-      <h2>IPX-999</h2>
+      <h2>ဆရာမကားကောင်းလေး</h2>
       <p>Teacher theme movie</p>
       <a href="https://megaup.net/zzzzzz" target="_blank">Download</a>
     </div>
 
+    <!-- POST 4 -->
+    <div class="card" data-title="IPX-999" data-category="teacher">
+      <img src="IMG_20250603_000159_189.jpg" alt="IPX-999" />
+      <h2>စာရင်းကိုင်မလေး/h2>
+      <p>Teacher theme movie</p>
+      <a href="https://megaup.net/zzzzzz" target="_blank">Download</a>
   </div>
 
   <script>

@@ -78,10 +78,10 @@
   </style>
 </head>
 <body>
-  <h1>/h1>
+  <h1>
 
   <div class="search-bar">
-    <input type="text" id="searchInput" placeholder=" ဇာတ်ကားနာမည်ရှာရန်..." onkeyup="filterMovies()" />
+    <input type="text" id="searchInput" placeholder=" ကားနာမည်ရှာရန်..." onkeyup="filterMovies()" />
   </div>
 
   <div class="grid" id="movieGrid">
@@ -135,5 +135,3 @@
       });
     }
   </script>
-</body>
-</html>

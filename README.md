@@ -20,7 +20,7 @@
   <a href="https://megaup.net/3b9e9ee785f12a5ce0f38983910e1b61/310.mp4" target="_blank">
     <button style="padding: 10px 25px; font-size: 18px; background-color:#007BFF; color:white; border:none; border-radius:8px; margin-top:10px;">
       📥 Download Now
-    </button> 
+    </https://i.postimg.cc/RZSzZGW9/In-Shot-20250602-215103078.jpg> 
   </a>
 
 </body>

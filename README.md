@@ -1,27 +1,153 @@
-# <မြန်မာစာတန်းထိုး>
-<html>
+# စာတန်းထိုးကားကောင်းလေးများ
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Video Download Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AllBlue MMSub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .search-bar, .category-bar {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .category-bar select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background: #0056b3;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; background-color:#f2f2f2; padding:20px;">
-  
-  
-  <img src="IMG_20250603_000208_434.jpg" alt="Video Thumbnail" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+<body>
+  <h1>🎬 ဂျပန်ကားများဒေါင်းပါ</h1>
 
-  
-  <h2 style="margin-top:20px;">🎬 မိန်းကလေးသုံးယောက်</h2>
-  <p style="color:#333; font-size:16px;">
-    ဒီ video က အထူးသဖြင့် drama တစ်ခုအကြောင်းကိုပြထားပါတယ်။
-    အရမ်းစိတ်ဝင်စားဖွယ်ရာပါ။ Megaup link မှာ download လုပ်နိုင်ပါတယ်။အရမ်းကောင်းပါတယ်😂😂😂
-  </p>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="🔍 ဇာတ်ကားနာမည်ရှာရန်..." onkeyup="filterMovies()" />
+  </div>
 
-  
-  <a href="https://megaup.net/3b9e9ee785f12a5ce0f38983910e1b61/310.mp4" target="_blank">
-    <button style="padding: 10px 25px; font-size: 18px; background-color:#007BFF; color:white; border:none; border-radius:8px; margin-top:10px;">
-      📥 Download Now
-    </button>
-  </a>
+  <div class="category-bar">
+    <select id="categorySelect" onchange="filterMovies()">
+      <option value="all">📁 Category ရွေးပါ</option>
+      <option value="school">School</option>
+      <option value="nurse">Nurse</option>
+      <option value="teacher">Teacher</option>
+    </select>
+  </div>
 
+  <div class="grid" id="movieGrid">
+
+    <!-- POST 1 -->
+    <div class="card" data-title="IPX-310" data-category="school">
+      <img src="IMG_20250603_000159_189.jpg" alt="IPX-310" />
+      <h2>IPX-310</h2>
+      <p>School theme movie</p>
+      <a href="https://megaup.net/xxxxxx" target="_blank">Download</a>
+    </div>
+
+    <!-- POST 2 -->
+    <div class="card" data-title="IPX-222" data-category="nurse">
+      <img src="IMG_20250603_000208_434.jpg"IPX-222" />
+      <h2>IPX-222</h2>
+      <p>Nurse story</p>
+      <a href="https://megaup.net/yyyyyy" target="_blank">Download</a>
+    </div>
+
+    <!-- POST 3 -->
+    <div class="card" data-title="IPX-999" data-category="teacher">
+      <img src="IMG_20250603_000212_622.jpg" alt="IPX-999" />
+      <h2>IPX-999</h2>
+      <p>Teacher theme movie</p>
+      <a href="https://megaup.net/zzzzzz" target="_blank">Download</a>
+    </div>
+
+  </div>
+
+  <script>
+    function filterMovies() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const selectedCategory = document.getElementById("categorySelect").value;
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        const category = card.dataset.category;
+
+        const matchesSearch = title.includes(input);
+        const matchesCategory = (selectedCategory === "all" || selectedCategory === category);
+
+        if (matchesSearch && matchesCategory) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    }
+  </script>
 </body>
 </html>

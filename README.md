@@ -34,9 +34,7 @@
 
   <h1>MMSub Movie List</h1>
 
-  <div class="post"></body>
-</html>
-<!DOCTYPE html>
+  <div class="<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -94,13 +92,15 @@
   </p>
 
   <!-- Download Link -->
-  <a class="download-link" href="https://megaup.net/your-download-link" target="_blank">📥 Download Now</a>
+  <a class="download-link" href="https://megaup.net/your-download-link" target="_blank"> Download Now</a>
 
   <!-- Back link -->
-  <p style="margin-top: 30px;"><a href="index.html" style="color:#aaa;">← Back to Movie List</a></p>
+  <p style="margin-top: 30px;"><a href="index.html" style="color:#aaa;"> Back to Movie List</a></p>
 
 </body>
+</html>"></body>
 </html>
+
 
     <a href="post1.html">
       <img src="IMG_20250603_000159_189.jpg" alt="Movie 1">
@@ -113,9 +113,7 @@
     </a>
   </div>
 
-  <div class="post"></body>
-</html>
-<!DOCTYPE html>
+  <div class="<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -173,13 +171,15 @@
   </p>
 
   <!-- Download Link -->
-  <a class="download-link" href="https://megaup.net/your-download-link" target="_blank">📥 Download Now</a>
+  <a class="download-link" href="https://megaup.net/your-download-link" target="_blank"> Download Now</a>
 
   <!-- Back link -->
-  <p style="margin-top: 30px;"><a href="index.html" style="color:#aaa;">← Back to Movie List</a></p>
+  <p style="margin-top: 30px;"><a href="index.html" style="color:#aaa;"> Back to Movie List</a></p>
 
 </body>
+</html>"></body>
 </html>
+
 
     <a href="post2.html">
       <img src="IMG_20250603_000159_189.jpg" alt="Movie 2">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>XXX-789 Detail</title>
+  <title>MMSub Movies</title>
   <style>
     body {
       background-color: black;
@@ -10,22 +10,65 @@
       font-family: Arial, sans-serif;
       padding: 20px;
     }
-    img {
-      width: 100%;
-      max-width: 500px;
+    .post {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .post img {
+      width: 200px;
+      height: auto;
+      margin-right: 20px;
       border-radius: 10px;
+    }
+    .post a {
+      color: white;
+      text-decoration: none;
+    }
+    .post a:hover {
+      color: #ff4081;
     }
   </style>
 </head>
 <body>
 
-  <h1>XXX-789</h1>
-  <img src="IMG_20250603_000208_434.jpg" alt="Movie">
-  <p>
-    ဒီဇတ်လမ်းမှာ ဇာတ်ကောင်သုံးဦးက Paris ထဲမှာ ကြုံတွေ့ရတဲ့အကြောင်းတွေ၊ ချစ်ခြင်းမေတ္တာနဲ့ခေါင်းဆောင်မှုတွေနဲ့ ပြည့်နှက်နေပါတယ်။ ဇတ်လမ်းဟာ ချစ်ခြင်းနဲ့မိသားစုတန်ဖိုးကိုပြသသလို ပြင်းပြတဲ့ဒရာမာလည်းပါဝင်ပါတယ်။
-  </p>
+  <h1>MMSub Movie List</h1>
 
-  <p><a href="index.html" style="color:#ff4081;">← Back to Home</a></p>
+  <div class="post">
+    <a href="post1.html">
+      <img src="IMG_20250603_000159_189.jpg" alt="Movie 1">
+    </a>
+    <a href="post1.html">
+      <div>
+        <h2>XXX-789</h2>
+        <p>mmsub</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="post">
+    <a href="post2.html">
+      <img src="IMG_20250603_000159_189.jpg" alt="Movie 2">
+    </a>
+    <a href="post2.html">
+      <div>
+        <h2>XXX-456</h2>
+        <p>mmsub</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="post">
+    <a href="post3.html">
+      <img src="IMG_20250603_000212_622.jpg" alt="Movie 3">
+    </a>
+    <a href="post3.html">
+      <div>
+        <h2>XXX-123</h2>
+        <p>mmsub</p>
+      </div>
+    </a>
+  </div>
 
 </body>
 </html>

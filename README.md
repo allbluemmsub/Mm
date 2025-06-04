@@ -1,4 +1,3 @@
-<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +10,18 @@
       background: #f5f5f5;
     }
     h1 {
-      text-align: center;
+      text-align: right;
     }
     #searchBar {
-      margin: 20px auto;
+      margin: 15px auto;
       display: block;
       padding: 10px;
-      width: 80%;
+      width: 50%;
       font-size: 16px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(175px, 2fr));
       gap: 20px;
       padding: 20px;
     }
@@ -61,7 +60,7 @@
   <input type="text" id="searchBar" onkeyup="searchPosts()" placeholder="Search by title...">  <div class="grid" id="postGrid">
     <!-- Example Post -->
     <div class="card">
-      <img src="IMG_20250603_000159_189.jpg" alt="IPX-310">
+      <img src="IMG_20250603_000159_189.jpg">
       <h3>IPX-310</h3>
       <a href="post1.html">View Post</a>
     </div>

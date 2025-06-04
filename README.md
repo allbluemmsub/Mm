@@ -69,7 +69,7 @@
       <a href="post2.html">View Post</a>
 
     
-  <script>
+  
     function searchPosts() {
       const input = document.getElementById('searchBar').value.toLowerCase();
       const cards = document.querySelectorAll('.card');
@@ -78,4 +78,3 @@
         card.style.display = title.includes(input) ? 'block' : 'none';
       });
     }
-  </script>

@@ -13,10 +13,10 @@
       text-align: block;
     }
     #searchBar {
-      margin: 10px auto;
+      margin: 5px auto;
       display: right;
       padding: 10px;
-      width: 25%;
+      width: 40%;
       font-size: 16px;
     }
     .grid {
@@ -63,11 +63,13 @@
       <img src="IMG_20250603_000159_189.jpg">
       <h3>IPX-310
       <a href="post1.html">View Post</a>
+
     </div>
     <div class="card">
       <img src="IMG_20250603_000159_189.jpg" alt="ABP-123">
       <h3>ABP-123
       <a href="post2.html">View Post</a>
+
     </div>
     <!-- Add more posts here -->
   </div>  <script>

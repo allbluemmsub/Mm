@@ -21,7 +21,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, fr1));
       gap: 20px;
       padding: 20px;
     }
@@ -63,13 +63,13 @@
       <img src="IMG_20250603_000159_189.jpg">
       <h3>IPX-310
       <a href="post1.html">View Post</a>
-    }  
     <div class="card">
       <img src="IMG_20250603_000159_189.jpg" alt="ABP-123">
       <h3>ABP-123
       <a href="post2.html">View Post</a>
-    }
-  </div>  <script>
+
+    
+  <script>
     function searchPosts() {
       const input = document.getElementById('searchBar').value.toLowerCase();
       const cards = document.querySelectorAll('.card');
@@ -78,5 +78,4 @@
         card.style.display = title.includes(input) ? 'block' : 'none';
       });
     }
-  </script></body>
-</html>
+  </script>

@@ -67,15 +67,3 @@
       <img src="IMG_20250603_000159_189.jpg" alt="ABP-123">
       <h3>ABP-123
       <a href="post2.html">View Post</a> 
-
-
-        
-    }    
-    function searchPosts() {
-      const input = document.getElementById('searchBar').value.toLowerCase();
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        card.style.display = title.includes(input) ? 'block' : 'none';
-      });
-    }

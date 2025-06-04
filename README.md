@@ -10,18 +10,18 @@
       background: #f5f5f5;
     }
     h1 {
-      text-align: right;
+      text-align: block;
     }
     #searchBar {
-      margin: 15px auto;
-      display: block;
+      margin: 10px auto;
+      display: right;
       padding: 10px;
       width: 50%;
       font-size: 16px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(175px, 2fr));
+      grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
       gap: 20px;
       padding: 20px;
     }
@@ -56,6 +56,7 @@
   </style>
 </head>
 <body>
+  <img src="IMG_20250603_000159_189.jpg">
   <h1>AllBlue JAV MMSUB</h1>
   <input type="text" id="searchBar" onkeyup="searchPosts()" placeholder="Search by title...">  <div class="grid" id="postGrid">
     <!-- Example Post -->

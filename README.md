@@ -1,57 +1,84 @@
-<!DOCTYPE html>
-<html lang="my">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MMSub Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My JAV Sub Website</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
       font-family: Arial, sans-serif;
+      margin: 0;
       padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    #searchBar {
+      margin: 20px auto;
+      display: block;
+      padding: 10px;
+      width: 80%;
+      font-size: 16px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      padding: 20px;
     }
-    .post {
-      background-color: #1a1a1a;
+    .card {
+      background: #fff;
       border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       text-align: center;
+      transition: 0.3s;
     }
-    .post img {
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
       width: 100%;
-      height: auto;
+      height: 200px;
+      object-fit: cover;
     }
-    .post h2 {
+    .card h3 {
       margin: 10px 0;
     }
-    .post a {
-      color: #ff4081;
+    .card a {
+      display: block;
+      background: #007bff;
+      color: white;
       text-decoration: none;
+      padding: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
   </style>
 </head>
 <body>
-
-  <h1>MMSub Movies</h1>
-  <div class="grid">
-    <div class="post">
-      <a href="post1.html">
-        <img src="IMG_20250603_000208_434.jpg" alt="Movie 1">
-        <h2>go go မြန်မာ</h2>
-      </a>
+  <h1>AllBlue JAV MMSUB</h1>
+  <input type="text" id="searchBar" onkeyup="searchPosts()" placeholder="Search by title...">  <div class="grid" id="postGrid">
+    <!-- Example Post -->
+    <div class="card">
+      <img src="IMG_20250603_000159_189.jpg" alt="IPX-310">
+      <h3>IPX-310</h3>
+      <a href="post1.html">View Post</a>
     </div>
-    <div class="post">
-      <a href="post2.html">
-        <img src="IMG_20250603_000159_189.jpg" alt="Movie 2">
-        <h2>myanmar မြန်မာ</h2>
-      </a>
+    <div class="card">
+      <img src="IMG_20250603_000159_189.jpg" alt="ABP-123">
+      <h3>ABP-123</h3>
+      <a href="post2.html">View Post</a>
     </div>
-    <!-- ထပ်မံသော post များကို ဒီနေရာတွင် ထည့်ပါ -->
-  </div>
-
-</body>
+    <!-- Add more posts here -->
+  </div>  <script>
+    function searchPosts() {
+      const input = document.getElementById('searchBar').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script></body>
 </html>

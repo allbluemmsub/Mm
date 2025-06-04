@@ -15,7 +15,7 @@
     #searchBar {
       margin: 5px;
       display: right;
-      padding: 10px;
+      padding: 5px;
       width: 40%;
       font-size: 16px;
     }
@@ -63,12 +63,12 @@
       <img src="IMG_20250603_000159_189.jpg">
       <h3>IPX-310
       <a href="post1.html">View Post</a>
-      
+    }  
     <div class="card">
       <img src="IMG_20250603_000159_189.jpg" alt="ABP-123">
       <h3>ABP-123
       <a href="post2.html">View Post</a>
-      
+    }
   </div>  <script>
     function searchPosts() {
       const input = document.getElementById('searchBar').value.toLowerCase();

@@ -56,13 +56,12 @@
   </style>
 </head>
 <body>
-  <img src="IMG_20250603_000159_189.jpg">
-  <h1>AllBlue JAV MMSUB</h1>
+  <img src="ads02.gif">
   <input type="text" id="searchBar" onkeyup="searchPosts()" placeholder="Search by title...">  <div class="grid" id="postGrid">
     <!-- Example Post -->
     <div class="card">
       <img src="IMG_20250603_000159_189.jpg">
-      <h3>IPX-310</h3>
+      <h3>IPX-310>
       <a href="post1.html">View Post</a>
     </div>
     <div class="card">

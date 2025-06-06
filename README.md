@@ -1,128 +1,120 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Allblue JAV MMSub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
-    }
-    .header {
-      background-color: #ff4d4d;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .search-box {
-      background-color: #ff4d4d;
-      padding: 20px;
-      text-align: center;
-    }
-    .search-box input[type="text"] {
-      width: 80%;
-      max-width: 400px;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 4px;
-    }
-    .search-box button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #c0392b;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      margin-left: 10px;
-      cursor: pointer;
-    }
-    .section-title {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 20px;
-      color: #333;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 15px;
-      padding: 0 20px 40px;
-    }
-    .card {
-      background-color: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: relative;
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .duration {
-      position: absolute;
-      bottom: 8px;
-      right: 8px;
-      background-color: rgba(0,0,0,0.7);
-      color: white;
-      padding: 2px 6px;
-      font-size: 12px;
-      border-radius: 4px;
-    }
-    .info {
-      padding: 10px;
-    }
-    .title {
-      font-size: 14px;
-      font-weight: bold;
-      color: #007BFF;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .date {
-      font-size: 12px;
-      color: #888;
-      margin-top: 4px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Search</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            max-width: 1012px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #24292e;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .search-container {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .search-input {
+            flex: 1;
+            padding: 5px 12px;
+            font-size: 14px;
+            line-height: 20px;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+            box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+        }
+        .search-button {
+            margin-left: 10px;
+            padding: 5px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            background-color: #2ea44f;
+            border: 1px solid rgba(27,31,35,0.15);
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 24px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eaecef;
+        }
+        .time-item {
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .code-item {
+            margin: 15px 0;
+        }
+        .code-title {
+            font-weight: 600;
+            color: #0366d6;
+        }
+        .code-date {
+            font-size: 12px;
+            color: #586069;
+        }
+    </style>
 </head>
-<body>  <div class="header">
-    allbluejavMMsub
-  </div>  <div class="search-box">
-    <input type="text" placeholder="Search Code Example SSNI-999">
-    <button>Search</button>
-  </div>  <div class="section-title">Popular Today</div>  <div class="grid">
-    <div class="card">
-      <img src="IMG_20250603_000159_189.jpg" alt="">
-      <div class="duration">2:20:00</div>
-      <div class="info">
-        <div class="title">TEK-102 Flower...</div>
-        <div class="date">03 Jun 2025</div>
-      </div>
+<body>
+    <h1>Code</h1>
+    
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search Code Example SSNI-999">
+        <button class="search-button">Search</button>
     </div>
-    <div class="card">
-      <img src="IMG_20250603_000208_434.jpg" alt="">
-      <div class="duration">23:15:00</div>
-      <div class="info">
-        <div class="title">CRDD-034 Blu...</div>
-        <div class="date">29 May 2024</div>
-      </div>
+    
+    <hr>
+    
+    <h2>Popular Today</h2>
+    
+    <div class="time-item">2:20:00</div>
+    <div class="time-item">23:15:00</div>
+    <div class="time-item">2:10:00</div>
+    
+    <div class="code-item">
+        <div class="code-title">TEK-102 Flo...</div>
+        <div class="code-date">03 Jun 2025</div>
     </div>
-    <div class="card">
-      <img src="img3.jpg" alt="">
-      <div class="duration">2:10:00</div>
-      <div class="info">
-        <div class="title">START-258 A ...</div>
-        <div class="date">04 Feb 2025</div>
-      </div>
+    
+    <div class="code-item">
+        <div class="code-title">CRDD-034 Bl...</div>
+        <div class="code-date">29 May 2024</div>
     </div>
-    <!-- Add more posts below -->
-  </div></body>
+    
+    <div class="code-item">
+        <div class="code-title">START-258 A ...</div>
+        <div class="code-date">04 Feb 2025</div>
+    </div>
+    
+    <div class="time-item">3:42</div>
+    <div class="time-item">2:24:00</div>
+    <div class="time-item">2:25:00</div>
+    <div class="time-item">4:15:00</div>
+    
+    <div class="code-item">
+        <div class="code-title">START-257 A...</div>
+        <div class="code-date">10 Feb 2025</div>
+    </div>
+    
+    <div class="code-item">
+        <div class="code-title">FSVSS-015 [V...]</div>
+        <div class="code-date">01 Jun 2025</div>
+    </div>
+    
+    <div class="code-item">
+        <div class="code-title">SDMM-201 E...</div>
+        <div class="code-date">03 Jun 2025</div>
+    </div>
+</body>
 </html>
